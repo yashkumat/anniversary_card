@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary Didi & Jiju</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+        .cursive{
+            font-family: 'Great Vibes', cursive;
+        }
+        .home{
+            height: 100vh;
+            background-color: #fcf6b1ff;
+        }
+        .heart1{
+            position: absolute;
+            top: 80%;
+            left: 40%;
+        }
+        .heart2{
+            position: absolute;
+            top: 20%;
+            left: 60%;
+        }
+        .heart3{
+            position: absolute;
+            top: 60%;
+            left: 80%;
+            transform: scale(2);
+        }
+        .heart4{
+            position: absolute;
+            top: 50%;
+            left: 20%;
+        }
+        .red-color{
+            color: #ff2400;
+        }
+        #story1{
+            height: auto;
+            padding-bottom: 50px;
+            background-color: #a9e5bbff;
+        }
+        .carousel-image{
+            width: 450px !important;
+            height: 450px !important;
+        }
+        .story2{
+            background-color: #e3170aff;
+        }
+        .end{
+            background-color: #f7b32bff;
+        }
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+        <section id="home" class="home">
+            <img class="heart1" src="https://img.icons8.com/material-outlined/24/000000/like--v1.png"/>
+            <img class="heart2" src="https://img.icons8.com/material-outlined/24/000000/like--v1.png"/>
+            <img class="heart3" src="https://img.icons8.com/material-outlined/24/000000/like--v1.png"/>
+            <img class="heart4" src="https://img.icons8.com/fluency-systems-filled/48/000000/like.png"/>
+            <div class="d-flex align-items-center justify-content-center flex-column h-100">
+                <h1 class="display-1 red-color cursive animate__animated animate__backInDown">Happy Anniversary</h1>
+                <h1 class="red-color cursive animate__animated animate__backInUp">to the most amazing couple!</h1>
+                <button class="btn animate__animated animate__heartBeat" onclick="play()"><small class="d-flex align-items-center mt-5" >Let's start? <img class="mx-2 animate__animated animate__repeat-3 animate__heartBeat" src="https://img.icons8.com/ios-glyphs/30/000000/music-heart.png"/></small></button>
+            </div>
+            <audio id="audio" src="music.mp3"></audio>
+        </section>
+        <section id="story1" class="story1">
+            <div class="row container p-5">
+                <div class="col-md-8 d-flex justify-content-center align-items-center flex-column" data-aos="fade-up-right" data-aos-easing="linear"
+                data-aos-duration="1500">
+                    <h1 class="display-1 text-center cursive p-3">1 year as <span class="red-color">Mr & Mrs</span></h1>
+                    <h1 class="cursive">Many more to go...</h1>
+                </div>
+                <div class="col-md-4 d-flex justify-content-start" data-aos="fade-down-left" data-aos-easing="linear"
+                data-aos-duration="1500">
+                    <img src="hero-img.png" class="img-fluid rounded-circle p-2" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="story2" class="story2">
+            <div class="row p-5">
+                <div class="col-md-6 d-flex justify-content-center align-items-center" data-aos="flip-right" data-aos-easing="linear"
+                data-aos-duration="2000">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="mehndi.png" class="img-fluid carousel-image rounded" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h1 class="cursive">Mhendi</h1>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="bachlors.png" class="img-fluid carousel-image rounded" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h1 class="cursive">Batchlor's</h1>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="haldi.png" class="img-fluid carousel-image rounded" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h1 class="cursive">Haldi</h1>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="marraige.png" class="img-fluid carousel-image rounded" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h1 class="cursive">Pheras</h1>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="reception.png" class="img-fluid carousel-image rounded" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h1 class="cursive">Reception</h1>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center align-items-center flex-column">
+                    <h1 class="display-1 cursive p-3">And it went like...</h1>
+                </div>
+            </div>
+        </section>
+        <section id="story3" class="story3 p-5">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-1 cursive text-center red-color mb-5">
+                        la familia es todo
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="family.JPG" alt="" class="img-fluid rounded" data-aos="zoom-in" data-aos-easing="linear"
+                        data-aos-duration="2000">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="end" class="end">
+            <div class="row p-5">
+                <div class="col-md-4">
+                    <img src="end.png" class="img-fluid rounded-circle" alt="" data-aos="flip-up"
+                    data-aos-duration="2000">
+                </div>
+                <div class="col-md-4 d-flex align-items-center flex-column justify-content-center text-center p-5">
+                    <h1 class="cursive red-color display-4">You lovely lovebirds!</h1>
+                    <h1 class="cursive">Stay sweet and loving forever!</h1>
+                </div>
+                <div class="col-md-4">
+                    <img src="lovebirds.png" class="img-fluid rounded-circle" alt="" data-aos="flip-down"
+                    data-aos-duration="2000"> 
+                </div>
+            </div>
+        </section>
+    
+    
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        function play() {
+            var audio = document.getElementById("audio");
+            audio.play();
+            window.scrollBy(0, 500);
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
